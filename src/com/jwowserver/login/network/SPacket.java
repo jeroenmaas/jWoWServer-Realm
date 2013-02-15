@@ -15,7 +15,7 @@ public class SPacket {
 		byte[] buff = new byte[size];
 		bb = ByteBuffer.wrap(buff);
 		bb.order(ByteOrder.BIG_ENDIAN);
-		bb.put(op.getByteValue());
+		bb.put(op.getId());
 	}
 	
 	public void write(byte b) {

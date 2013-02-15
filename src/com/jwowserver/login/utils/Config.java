@@ -20,6 +20,7 @@ public class Config {
 	private Config() {
 	    configFile = new Properties();
 	    try {
+	    	//configFile.load(new FileInputStream("c:\\configuration.conf"));
 			configFile.load(new FileInputStream(CONFIGFILE));
 			
 			if(configFile.isEmpty()) {
